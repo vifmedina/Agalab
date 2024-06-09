@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0px;  
+    padding: 0px;
+    font-family: 'Work Sans';
+}
+/*Zerando o Margin e o Padding (Espaçamentos) de todos os itens da tela.*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+/*Deixando a barra de rolagem mais fina.*/
+
+body::-webkit-scrollbar-thumb {
+    background-color: #a1a1a1;
+    border-radius: 10px;
+}
+/*Arredondando a barra de rolagem.*/
+
+header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+/*Configurando o alinhamento da logo e das âncoras de navegação.*/
+
+header > nav > a {
+    padding-left: 50px;
+    color: #373435;
+    text-decoration: none;
+    font-weight: 500;
+}
+/*Mudando as características das âncoras de navegação. Cor, tamanho, expessura e distância.*/
+
+header > nav > a:hover {
+    color: #0285cc;
+    font-weight: 600;
+    transition: 0.3s;
+}
+/*Utilizando a pseudo-classe Hover para aplicar um efeito de foco a elemento selecinado. Assim as tags âncoras mudam de cor e ganham expessura quando o mouse fica em cima. Tuddo isso com uma transição de 0.3s para deixar o movimento mais harmônico.*/
+
+@media (max-width: 672px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Setando os elementos do Header para ficarem em coluna para telas menores que 594px.*/
+
+    header > nav {
+        margin-top: 20px;
+    }
+    /*Adicionando uma leve margem para melher distribuição dos elementos de navegação.*/
+
+    header > nav > a {
+        padding: 0px 5px;
+    }
+}
+/*Deixando o Header responsivo para qualquer tipo de tela.*/
+
+/*Finalização do Header!*/
+
+/*Iniciando o conteúdo principal!*/
+
+main {
+    padding-top: 50px;
+    max-width: 1150px;
+    margin: auto;
+}
+/*Configurando as dimensões do corpo.*/
+
+main h1 {
+    color: #0285cc;
+    font-weight: 600;
+    font-size: 1.7em;
+}
+/*Estilizando os títulos do corpo.*/
+
+main p {
+    line-height: 25px;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+/*Estilizando os parágrafos do corpo.*/
+
+#botao-whats {
+    display: flex;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+/*Colocando o botão do WhatsApp para ficar no canto da tela de forma fixa.*/
+
+#mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Centralizando o mapa do Google.*/
+
+main > #localizacao > #mapa > iframe {
+    border-radius: 20px;
+}
+/*Detalhe para o mapa.*/
+
+@media (max-width: 800px) {
+    main {
+        max-width: 370px;
+    }
+}
+/*Responsividade do corpo para diferentes tipos de tela.*/
+
+@media (min-width: 800px) {
+    main {
+        max-width: 750px;
+    }
+}
+/*Responsividade do corpo para diferentes tipos de tela.*/
+
+@media (min-width: 1200px) {
+    main {
+        max-width: 1150px;
+    }
+}
+/*Responsividade do corpo para diferentes tipos de tela.*/
