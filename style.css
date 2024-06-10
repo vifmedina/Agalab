@@ -6,6 +6,7 @@ body {
     margin: 0px;  
     padding: 0px;
     font-family: 'Work Sans';
+    background-color: #F5F5F5;
 }
 /*Zerando o Margin e o Padding (Espaçamentos) de todos os itens da tela.*/
 
@@ -68,9 +69,10 @@ header > nav > a:hover {
 /*Iniciando o conteúdo principal!*/
 
 main {
-    padding-top: 50px;
+    padding-top: 30px;
     max-width: 1150px;
     margin: auto;
+    margin-bottom: 70px;
 }
 /*Configurando as dimensões do corpo.*/
 
@@ -84,10 +86,37 @@ main h1 {
 main p {
     line-height: 25px;
     font-size: 1.1em;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     text-align: justify;
 }
-/*Estilizando os parágrafos do corpo.*/
+/*Estilizando os parágrafos do corpo.*/ 
+
+main ul {
+    margin: 30px 0px;
+}
+
+main li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+main li::marker {
+    color: #0285cc;
+}
+/*Editando os conteúdos da lista */
+
+main img {
+    margin: 20px 0px;
+    width: 600px;
+    height: 337,5px;
+    border-radius: 15px;
+}
+
+.imagem {
+    text-align: center;
+}
+/*Centralizando as imagens*/
 
 #botao-whats {
     display: flex;
@@ -109,9 +138,59 @@ main > #localizacao > #mapa > iframe {
 }
 /*Detalhe para o mapa.*/
 
+footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgray;
+}
+
+#pe {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pe > nav > a{
+    padding-right: 50px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#pe > nav > a:hover {
+    color: #03b056;
+    transition: 0.3s;
+}
+
+iframe {
+    width: 350px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
 @media (max-width: 800px) {
     main {
         max-width: 370px;
+    }
+
+    main img {
+        width: 350px;
+        height: 196.875px;
+    }
+
+    #pe {
+        flex-direction: column;
+        max-width: 370px;
+    }
+
+    #pe > nav {
+        padding-top: 20px;
+    }
+
+    #pe > nav > a {
+        padding: 10px;
     }
 }
 /*Responsividade do corpo para diferentes tipos de tela.*/
@@ -120,11 +199,19 @@ main > #localizacao > #mapa > iframe {
     main {
         max-width: 750px;
     }
+
+    #pe {
+        max-width: 750px;
+    }
 }
 /*Responsividade do corpo para diferentes tipos de tela.*/
 
 @media (min-width: 1200px) {
     main {
+        max-width: 1150px;
+    }
+
+    #pe {
         max-width: 1150px;
     }
 }
