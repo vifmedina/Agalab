@@ -112,6 +112,7 @@ main img {
     height: 337,5px;
     border-radius: 15px;
 }
+/*Configurando as imagens*/
 
 .imagem {
     text-align: center;
@@ -126,49 +127,42 @@ main img {
 }
 /*Colocando o botão do WhatsApp para ficar no canto da tela de forma fixa.*/
 
-#mapa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/*Centralizando o mapa do Google.*/
-
-main > #localizacao > #mapa > iframe {
-    border-radius: 20px;
-}
-/*Detalhe para o mapa.*/
-
 footer {
-    margin: 0px;
-    padding: 0px;
     background-color: lightgray;
 }
+/*Cor de fundo para o rodapé*/
 
-#pe {
+#rodape {
+    padding: 30px;
+
     margin: auto;
     max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/*Configurações de posição dos itens do rodapé*/
 
-#pe > nav > a{
-    padding-right: 50px;
+#rodape > nav > a{
+    padding: 30px;
     color: black;
     text-decoration: none;
     font-weight: 500;
 }
+/*Mudando as características das âncoras de navegação. Cor, tamanho, expessura e distância.*/
 
-#pe > nav > a:hover {
+#rodape > nav > a:hover {
     color: #03b056;
     transition: 0.3s;
 }
+/*Utilizando a pseudo-classe Hover para aplicar um efeito de foco a elemento selecinado. Assim as tags âncoras mudam de cor quando o mouse fica em cima. Tuddo isso com uma transição de 0.3s para deixar o movimento mais harmônico.*/
 
-iframe {
-    width: 350px;
-    border-radius: 10px;
-    margin: 30px;
+footer > p {
+    margin: 0px;
+    padding-bottom: 10px;
+    text-align: center;
 }
+/*Ajeitando a posição texto do rodapé*/
 
 @media (max-width: 800px) {
     main {
@@ -180,16 +174,16 @@ iframe {
         height: 196.875px;
     }
 
-    #pe {
+    #rodape {
         flex-direction: column;
         max-width: 370px;
     }
 
-    #pe > nav {
+    #rodape > nav {
         padding-top: 20px;
     }
 
-    #pe > nav > a {
+    #rodape > nav > a {
         padding: 10px;
     }
 }
@@ -200,7 +194,7 @@ iframe {
         max-width: 750px;
     }
 
-    #pe {
+    #rodape {
         max-width: 750px;
     }
 }
@@ -211,7 +205,7 @@ iframe {
         max-width: 1150px;
     }
 
-    #pe {
+    #rodape {
         max-width: 1150px;
     }
 }
