@@ -128,7 +128,7 @@ main img {
 /*Colocando o botão do WhatsApp para ficar no canto da tela de forma fixa.*/
 
 footer {
-    background-color: lightgray;
+    background-color: #0285cc;
 }
 /*Cor de fundo para o rodapé*/
 
@@ -152,7 +152,7 @@ footer {
 /*Mudando as características das âncoras de navegação. Cor, tamanho, expessura e distância.*/
 
 #rodape > nav > a:hover {
-    color: #03b056;
+    color: white;
     transition: 0.3s;
 }
 /*Utilizando a pseudo-classe Hover para aplicar um efeito de foco a elemento selecinado. Assim as tags âncoras mudam de cor quando o mouse fica em cima. Tuddo isso com uma transição de 0.3s para deixar o movimento mais harmônico.*/
